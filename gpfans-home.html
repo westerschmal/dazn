@@ -138,7 +138,7 @@
             border-color: #FE091A !important;
         }
     </style>
-
+<script src="https://ads-dazn.adhese.com/tag/prebid_adhese.js"></script>
 <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js' type="36682d710fe6076a8831d698-text/javascript"></script>
 <script type="36682d710fe6076a8831d698-text/javascript">
 			  var googletag = googletag || {};
@@ -217,7 +217,7 @@
 								//request non-personalized ads from Google if user does not give consent.
 								googletag.pubads().setRequestNonPersonalizedAds(consentForAds ? 0 : 1);
 								//release DFP when consent values are available
-								googletag.pubads().refresh()
+								defineAdUnits();
 								//Load Criteo anti-adblock script
 								try { loadCriteo(); } catch(e) {};
 								//Load Seedtaqq
