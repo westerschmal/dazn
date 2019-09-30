@@ -107,6 +107,7 @@ var ad_breakpoint_mobile = 768;
 var ad_breakpoint_medium = 1008;
 </script>
 
+<script src="https://ads-dazn.adhese.com/tag/prebid_adhese.js"></script>
 <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 <script>
   var googletag = googletag || {};
@@ -158,5 +159,5 @@ var ad_breakpoint_medium = 1008;
 </script>
 <!-- CMP CONSENT LOGIC (do not edit) -->
 <script>
-var consentForAds,cmpResponse={};function processCmpConsent(){if(cmpResponse.getConsentData&&cmpResponse.getConsentData.consentData){var e=cmpResponse.getVendorConsents.purposeConsents[1]&&cmpResponse.getVendorConsents.purposeConsents[2]&&cmpResponse.getVendorConsents.purposeConsents[3]&&cmpResponse.getVendorConsents.purposeConsents[4]&&cmpResponse.getVendorConsents.purposeConsents[5];consentForAds!==e&&(consentForAds=e,googletag.cmd.push(function(){googletag.pubads().setTargeting("iab_string",[cmpResponse.getConsentData.consentData]),googletag.pubads().setTargeting("consent",[consentForAds?1:0]),googletag.pubads().setRequestNonPersonalizedAds(consentForAds?0:1),googletag.pubads().refresh();try{loadSeedtagq()}catch(e){}}))}}function handleCmpResponseCallbacks(){function n(){cmpResponse.getConsentData&&cmpResponse.getVendorConsents&&processCmpConsent()}return{consentDataCallback:function(e){cmpResponse.getConsentData=e,n()},vendorConsentsCallback:function(e){cmpResponse.getVendorConsents=e,n()}}}var callbackHandler=handleCmpResponseCallbacks();window.__cmp("getConsentData",null,callbackHandler.consentDataCallback),window.__cmp("getVendorConsents",null,callbackHandler.vendorConsentsCallback);
+var consentForAds,cmpResponse={};function processCmpConsent(){if(cmpResponse.getConsentData&&cmpResponse.getConsentData.consentData){var e=cmpResponse.getVendorConsents.purposeConsents[1]&&cmpResponse.getVendorConsents.purposeConsents[2]&&cmpResponse.getVendorConsents.purposeConsents[3]&&cmpResponse.getVendorConsents.purposeConsents[4]&&cmpResponse.getVendorConsents.purposeConsents[5];consentForAds!==e&&(consentForAds=e,googletag.cmd.push(function(){googletag.pubads().setTargeting("iab_string",[cmpResponse.getConsentData.consentData]),googletag.pubads().setTargeting("consent",[consentForAds?1:0]),googletag.pubads().setRequestNonPersonalizedAds(consentForAds?0:1),defineAdUnits();try{loadSeedtagq()}catch(e){}}))}}function handleCmpResponseCallbacks(){function n(){cmpResponse.getConsentData&&cmpResponse.getVendorConsents&&processCmpConsent()}return{consentDataCallback:function(e){cmpResponse.getConsentData=e,n()},vendorConsentsCallback:function(e){cmpResponse.getVendorConsents=e,n()}}}var callbackHandler=handleCmpResponseCallbacks();window.__cmp("getConsentData",null,callbackHandler.consentDataCallback),window.__cmp("getVendorConsents",null,callbackHandler.vendorConsentsCallback);
 </script>
